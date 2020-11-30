@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Project</title>
+    <script src="js/touche-min.js" charset="utf-8"></script>
+    <script src="js/zepto.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <section class="page active" data-page="entry">
+      <div class="entry-wrapper">
+        <div class="border"></div>
+        <div class="navigation">
+          <div class="gov">
+            <img
+              class="icon gov__icon"
+              src="./assets/gov.png"
+              alt="right arrow"
+            />
+
+            <div class="entry-navs">
+              <div class="arrow" id="button" data-js-page="gov_1">
+                <img src="./assets/arrowL.png" />
+              </div>
+              <p class="gov__title">Government</p>
+            </div>
+          </div>
+
+          <div class="brand">
+            <p class="brand__title">Kaon Interactive</p>
+            <div class="circle circle__1"></div>
+            <div class="circle circle__2"></div>
+            <div class="circle circle__3"></div>
+            <div class="circle circle__4"></div>
+          </div>
+
+          <div class="hc">
+            <img class="icon" src="./assets/med.png" alt="medical icon" />
+
+            <div class="entry-navs">
+              <p class="hc__title">Healthcare</p>
+              <div class="arrow" id="button" data-js-page="health">
+                <img src="./assets/arrowR.png" alt="right arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <picture>
+          <source
+            media="(max-width: 1109px)"
+            srcset="./assets/gov_bg_small.png 1000w"
+          />
+          <source
+            media="(min-width: 1110px)"
+            srcset="./assets/gov_bg_entry.png 2974w"
+          />
+          <img
+            class="entry-img"
+            src="./assets/gov_bg_small.png 1000w, ./assets/gov_bg_entry.png 2974w"
+            alt="Government building"
+          />
+        </picture>
+
+        <picture>
+          <source
+            media="(max-width: 1109px)"
+            srcset="./assets/hc_bg_small.png 1000w"
+          />
+          <source
+            media="(min-width: 1110px)"
+            srcset="./assets/hc_bg_entry.png 2972w"
+          />
+          <img
+            class="entry-img"
+            src="./assets/hc_bg_small.png 1000w, /img/./assets/hc_bg_entry.png 2972w"
+            alt="healthcare building"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section class="page government" data-page="gov_1">
+      <div class="explore">
+        <p class="explore__title">Explore</p>
+      </div>
+      <div
+        class="arrow arrow-nav arrow-nav--gov1"
+        id="button"
+        data-js-page="entry"
+      >
+        <img src="./assets/arrowR.png" alt="right arrow" />
+      </div>
+
+      <div class="gov1-options">
+        <ul>
+          <li>Option 1</li>
+          <li>Option 2</li>
+          <li>Option 3</li>
+          <li>Option 4</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page healthcare" data-page="health">
+      <div
+        class="arrow arrow-nav arrow-nav--health"
+        id="button"
+        data-js-page="entry"
+      >
+        <img src="./assets/arrowL.png" alt="left arrow" />
+      </div>
+
+      <div class="hc--a">
+        <div class="option">
+          <p class="option__title">Option A</p>
+        </div>
+      </div>
+
+      <div class="hc--b">
+        <div class="option">
+          <p class="option__title">Option B</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
