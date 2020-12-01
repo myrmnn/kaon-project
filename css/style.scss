@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   display: flex;
 
-  @media screen and (min-width: 1110px) {
+  @media screen and (min-width: 700px) {
     flex-direction: row;
   }
 }
@@ -26,7 +26,7 @@ body {
   width: 100vw;
   height: 50vh;
 
-  @media screen and (min-width: 1110px) {
+  @media screen and (min-width: 700px) {
     height: 100vh;
     width: 50vw;
   }
@@ -39,7 +39,7 @@ body {
   position: absolute;
   top: 50%;
 
-  @media screen and (min-width: 1110px) {
+  @media screen and (min-width: 700px) {
     width: 15px;
     height: 100vh;
     top: 0;
@@ -132,14 +132,13 @@ body {
 }
 
 .brand {
-  background-color: rgba(255, 255, 255, 0.89);
   width: 400px;
   height: 150px;
   position: relative;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
   transform: translateY(-15px);
   opacity: 0;
-  animation: slideDown 2s ease-in forwards;
+  animation: slideDown 2s ease-in forwards, bg-color 4s ease-in forwards;
   padding: 15px;
 
   @media screen and (min-width: 1350px) {
@@ -205,7 +204,6 @@ body {
   &__title {
     font-size: 2.4rem;
     color: white;
-    // margin-right: 90px;
   }
 
   @media screen and (min-width: 1110px) {
@@ -238,12 +236,12 @@ body {
   align-items: center;
 
   &--gov1 {
-    top: 5%;
+    top: 4%;
     right: 0;
   }
 
   &--health {
-    top: 5%;
+    top: 4%;
     left: 0;
   }
 }
@@ -257,7 +255,6 @@ body {
 .explore {
   cursor: pointer;
   position: absolute;
-  top: 0;
   height: 100px;
   width: 300px;
   background: rgb(141, 141, 141);
@@ -267,7 +264,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 75%;
+  top: 80%;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 
@@ -466,5 +463,15 @@ body {
 
   &.active {
     transform: translate(0);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: rgba(116, 114, 114, 0.8);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }

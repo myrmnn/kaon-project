@@ -23,7 +23,7 @@ body {
   display: flex;
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 700px) {
   .entry-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -37,7 +37,7 @@ body {
   height: 50vh;
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 700px) {
   .entry-img {
     height: 100vh;
     width: 50vw;
@@ -52,7 +52,7 @@ body {
   top: 50%;
 }
 
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 700px) {
   .border {
     width: 15px;
     height: 100vh;
@@ -194,7 +194,6 @@ body {
 }
 
 .brand {
-  background-color: rgba(255, 255, 255, 0.89);
   width: 400px;
   height: 150px;
   position: relative;
@@ -203,8 +202,8 @@ body {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
   opacity: 0;
-  -webkit-animation: slideDown 2s ease-in forwards;
-          animation: slideDown 2s ease-in forwards;
+  -webkit-animation: slideDown 2s ease-in forwards, bg-color 4s ease-in forwards;
+          animation: slideDown 2s ease-in forwards, bg-color 4s ease-in forwards;
   padding: 15px;
 }
 
@@ -330,12 +329,12 @@ body {
 }
 
 .arrow-nav--gov1 {
-  top: 5%;
+  top: 4%;
   right: 0;
 }
 
 .arrow-nav--health {
-  top: 5%;
+  top: 4%;
   left: 0;
 }
 
@@ -348,7 +347,6 @@ body {
 .explore {
   cursor: pointer;
   position: absolute;
-  top: 0;
   height: 100px;
   width: 300px;
   background: #8d8d8d;
@@ -364,7 +362,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 75%;
+  top: 80%;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -625,5 +623,23 @@ body {
 .page.active {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+@-webkit-keyframes bg-color {
+  0% {
+    background-color: rgba(116, 114, 114, 0.8);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes bg-color {
+  0% {
+    background-color: rgba(116, 114, 114, 0.8);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
 /*# sourceMappingURL=style.css.map */
